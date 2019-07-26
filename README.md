@@ -9,7 +9,7 @@ Swagger UI http://localhost:8066/swagger-ui.html
 
 - `POST /games/` Creates a new game and persists it to storage. Initializes game board with initial stones
                              in each of the players pits.    
-#####Example  
+##### Example  
 Request:                                                    
 ```
 curl -X POST "http://localhost:8066/games/"
@@ -22,7 +22,7 @@ Response:
  }
 ```                            
 - `PUT /games/{gameId}/pits/{pitId}` Makes a move. Sows stones from selected pit.
-#####Example  
+##### Example  
 Request:                                                    
 ```
 curl -X PUT "http://localhost:8066/games/0c43bbde-d276-47b2-b4cd-9026b8b46b4d/pits/3" 
@@ -52,7 +52,7 @@ Response:
 }
 ```  
 
-###Notes
+### Notes
 The first turn is determined by the owner of the first pit being sown.  
 
 ### Technologies
